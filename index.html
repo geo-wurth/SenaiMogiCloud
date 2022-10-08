@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="css/navegacao-portais.css">
 
     <!-- <script src="https://mogidascruzes.sp.senai.br/Scripts/menu.js" type="text/javascript"></script> -->
-    <script src="js/menu.js"></script>
     <title>Senai - GCP</title>
 </head>
 
@@ -57,12 +56,12 @@
         <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
                 <div class="col-xs-8 col-sm-6 col-md-3 logo">
-                    <a href="http://www.sp.senai.br" target="_blank">
-                        <img id="ImgLogo" src="https://mogidascruzes.sp.senai.br/Img/logo-senai2.png" alt="Logo Senai">
+                    <a target="_blank" href="http://www.sp.senai.br" target="_blank">
+                        <img id="ImgLogo" src="assets/senai.png" alt="Logo Senai">
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 barra-cat barra-cat-mob">
-                    <a href="/"><span class="cat">
+                    <a target="_blank" href="https://mogidascruzes.sp.senai.br/"><span class="cat">
                             Mogi das Cruzes - Centro</span>
                         <span class="nome-cat">
                             NAMI JAFET</span></a>
@@ -71,20 +70,20 @@
         </div>
     </header>
     <div class="page">
-        <div class="wrapper py-5">
+        <div class="wrapper py-4">
             <div class="container">
-                <h1>Bem vindo <span id="nomeDoAlunoText" class="fw-bold">aluno</span>, esse é o web server do serviço em
-                    nuvem!!</h1>
+                <h1>Bem vindo <span id="nomeDoAlunoText" class="fw-bold">aluno</span>, esse é o site carregado no web server do serviço em
+                    nuvem.</h1>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container pb-4">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <div class="col stretch-item">
-                    <a class="text-decoration-none stretch-item" href="https://aws.amazon.com/pt/">
+                    <a target="_blank" class="text-decoration-none stretch-item" href="https://aws.amazon.com/pt/">
                         <div class="card">
-                            <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png"
-                                class="card-img-top" alt="Amazon AWS">
+                            <img src="assets/amazon-aws.png"
+                                class="card-img-top aws" alt="Amazon AWS">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Amazon AWS</h5>
                                 <p class="card-text">Amazon Web Services, também conhecido como AWS, é uma plataforma de
@@ -97,9 +96,9 @@
                     </a>
                 </div>
                 <div class="col stretch-item">
-                    <a class="text-decoration-none stretch-item" href="https://cloud.google.com/?hl=pt-br">
+                    <a target="_blank" class="text-decoration-none stretch-item" href="https://cloud.google.com/?hl=pt-br">
                         <div class="card">
-                            <img src="https://cloud.google.com/images/velostrata/cloud-lockup-logo.png?hl=pt-br"
+                            <img src="assets/google-cloud.png"
                                 class="card-img-top" alt="Google Cloud">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Google Cloud</h5>
@@ -113,9 +112,9 @@
                     </a>
                 </div>
                 <div class="col stretch-item">
-                    <a class="text-decoration-none stretch-item" href="https://azure.microsoft.com/pt-br/">
+                    <a target="_blank" class="text-decoration-none stretch-item" href="https://azure.microsoft.com/pt-br/">
                         <div class="card">
-                            <img src="https://store-images.s-microsoft.com/image/apps.41858.8dd12337-fa3c-4de4-af31-3ec6db884ba6.86bfd6c5-53e4-42c0-ac7e-61c7d09fcb52.f3daa06d-cf41-43d6-b2a2-4183342c3cbe"
+                            <img src="assets/microsoft-azure.png"
                                 class="card-img-top" alt="Microsoft Azure">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Microsoft Azure</h5>
@@ -129,6 +128,12 @@
             </div>
         </div>
     </div>
+
+    <footer class="stretch-item">
+        <div class="stretch-item">
+            <p>Desenvolvido por George Wurthmann</p>
+        </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

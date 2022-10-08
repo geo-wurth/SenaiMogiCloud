@@ -533,8 +533,12 @@ footer .copyright {
 /* OUTROS */
 
 .page {
-    min-height: calc(100vh - 127px);
+    min-height: calc(100vh - 157px);
     background-color: rgb(230, 230, 230);
+}
+
+.page h1 {
+    text-align: center;
 }
 
 .card:hover {
@@ -557,4 +561,20 @@ footer .copyright {
 .stretch-item {
     display: flex;
     align-items: stretch;
+}
+
+footer {
+    background-color: #2884b2;
+    height: 30px;
+
+}
+
+footer div {
+    margin: 0 auto;
+}
+
+footer div p {
+    align-self: center;
+    margin: 0;
+    color: white;
 }

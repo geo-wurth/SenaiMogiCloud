@@ -1,23 +1,25 @@
 function alterarNome() {
     const nomeAlunoInput = document.querySelector("#nomeDoAlunoInput");
     const nomeAlunoText = document.querySelector("#nomeDoAlunoText");
-    const nomeAlunoButton = document.querySelector("#nomeDoAlunoButton")
 
     nomeAlunoText.innerText = nomeAlunoInput.value;
-    nomeAlunoInput.remove();
-    nomeAlunoButton.remove();
-
 }
-
-let modalState = false;
-
 
 const myModal = new bootstrap.Modal('#staticBackdrop', {
     keyboard: false
 });
 
 function closeModal() {
-    myModal.show(!modalState)
+    myModal.hide();
 };
 
-myModal.show(!modalState);
+const inputEle = document.querySelector("#nomeDoAlunoInput");
+inputEle.addEventListener('keyup', function(e){
+    var key = e.key;
+    if (key == "Enter") { // codigo da tecla enter
+        alterarNome();
+        closeModal();
+    }
+});
+
+myModal.show();
